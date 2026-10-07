@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nova Creative — Smart Interactive Showcase">
+  <title>Nova Creative — Interactive Showcase</title>
+
+  <!-- AOS: Scroll Reveal -->
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header intro-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Nova Creative - Trang chủ">
+        <span class="brand-mark">N</span>
+        <span>nova<span class="brand-dot">.</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button"
+              aria-label="Mở menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Điều hướng chính">
+        <a href="#work">Dự án</a>
+        <a href="#services">Năng lực</a>
+        <a href="#team">Đội ngũ</a>
+        <a href="#process">Quy trình</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Đổi giao diện sáng tối">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-orb orb-one" aria-hidden="true"></div>
+      <div class="hero-orb orb-two" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy intro-hero">
+          <p class="eyebrow"><span class="pulse-dot"></span> Smart Interface / 2026</p>
+          <h1>Design that <em>moves</em> with people.</h1>
+          <p class="hero-text">
+            Một showcase tương tác kết hợp cấu trúc Semantic HTML5, CSS Grid/Flexbox,
+            Design System, Responsive Design và Animation để biến giao diện tĩnh thành trải nghiệm sống động.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">
+              Xem dự án <span aria-hidden="true">↗</span>
+            </a>
+            <a class="btn btn-ghost" href="#process">Khám phá quy trình</a>
+          </div>
+
+          <div class="hero-meta" aria-label="Thông số dự án">
+            <span><strong>12</strong> concept</span>
+            <span><strong>04</strong> specialists</span>
+            <span><strong>100%</strong> responsive</span>
+          </div>
+        </div>
+
+        <div class="hero-visual intro-visual" aria-label="Minh họa dashboard sáng tạo">
+          <div class="visual-window">
+            <div class="window-top">
+              <span class="window-dots"><i></i><i></i><i></i></span>
+              <span>nova / showcase</span>
+            </div>
+            <div class="visual-content">
+              <div class="visual-label">CREATIVE SYSTEM</div>
+              <div class="visual-title">Motion<br><span>with meaning.</span></div>
+              <div class="mini-chart">
+                <span style="--h: 34%"></span>
+                <span style="--h: 52%"></span>
+                <span style="--h: 44%"></span>
+                <span style="--h: 76%"></span>
+                <span style="--h: 61%"></span>
+                <span style="--h: 92%"></span>
+              </div>
+              <div class="visual-footer">
+                <span>UX score</span><strong>98.4</strong>
+              </div>
+            </div>
+          </div>
+          <div class="float-card float-card-a">✦ Micro UX<br><small>Active state</small></div>
+          <div class="float-card float-card-b">AOS<br><small>Scroll reveal</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro-section" id="work">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <div>
+            <p class="eyebrow">01 / Selected work</p>
+            <h2>Projects with a pulse.</h2>
+          </div>
+          <p>Hover hoặc click vào card để xem lớp thông tin chi tiết.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-card-featured" data-aos="fade-up" data-aos-delay="50">
+            <div class="project-art art-one">
+              <span class="art-badge">01</span>
+              <div class="art-lines"><i></i><i></i><i></i></div>
+              <div class="art-orbit"></div>
+            </div>
+            <div class="project-info">
+              <div>
+                <p class="project-type">Digital Experience</p>
+                <h3>Orbit Banking</h3>
+              </div>
+              <span class="project-arrow">↗</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="project-art art-two">
+              <span class="art-badge">02</span>
+              <div class="poster-copy">LESS<br>NOISE.<br><em>MORE<br>IDEAS.</em></div>
+            </div>
+            <div class="project-info">
+              <div>
+                <p class="project-type">Brand System</p>
+                <h3>Mono Objects</h3>
+              </div>
+              <span class="project-arrow">↗</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="190">
+            <div class="project-art art-three">
+              <span class="art-badge">03</span>
+              <div class="grid-sphere"></div>
+              <div class="art-tag">MOTION / 3D</div>
+            </div>
+            <div class="project-info">
+              <div>
+                <p class="project-type">Interactive 3D</p>
+                <h3>Afterglow</h3>
+              </div>
+              <span class="project-arrow">↗</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="services">
+      <div class="container">
+        <div class="section-heading section-heading-light" data-aos="fade-up">
+          <div>
+            <p class="eyebrow">02 / Capabilities</p>
+            <h2>Built as a system,<br>felt as an experience.</h2>
+          </div>
+          <p>Grid cho layout lớn, Flexbox cho thành phần con và CSS Variables cho Design System.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card" data-aos="fade-up">
+            <span class="service-number">01</span>
+            <div class="service-icon">◌</div>
+            <h3>Experience Design</h3>
+            <p>Kiến trúc nội dung rõ ràng, Semantic HTML5 và luồng tương tác ưu tiên hành vi người dùng.</p>
+            <span class="service-link">Explore →</span>
+          </article>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <span class="service-number">02</span>
+            <div class="service-icon">⌘</div>
+            <h3>Visual Systems</h3>
+            <p>Typography, màu sắc, spacing, radius và component được kiểm soát tập trung bằng biến CSS.</p>
+            <span class="service-link">Explore →</span>
+          </article>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <span class="service-number">03</span>
+            <div class="service-icon">↗</div>
+            <h3>Motion & Interaction</h3>
+            <p>Micro-interactions, reveal, hover và active state dùng transition, transform, opacity và cubic-bezier.</p>
+            <span class="service-link">Explore →</span>
+          </article>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <span class="service-number">04</span>
+            <div class="service-icon">◎</div>
+            <h3>Responsive Build</h3>
+            <p>Mobile First, Grid auto-fit và breakpoint 768/1024px để giao diện không bị tràn khung.</p>
+            <span class="service-link">Explore →</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <div>
+            <p class="eyebrow">03 / The team</p>
+            <h2>People behind<br>the pixels.</h2>
+          </div>
+          <p>Card Flip là điểm nhấn tương tác: hover trên desktop, focus trên mobile để xem mặt sau.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="flip-card" tabindex="0" data-aos="zoom-in">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="member-index">01</span>
+                <div class="avatar avatar-one">AN</div>
+                <h3>An Nguyễn</h3>
+                <p>Product Designer</p>
+                <span class="flip-hint">Hover / Focus ↻</span>
+              </div>
+              <div class="flip-back">
+                <span class="member-index">01 / CONTACT</span>
+                <h3>Design<br>with intent.</h3>
+                <p>UX strategy · Prototyping · Design system</p>
+                <a href="mailto:hello@nova.example">hello@nova.example</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card" tabindex="0" data-aos="zoom-in" data-aos-delay="100">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="member-index">02</span>
+                <div class="avatar avatar-two">MI</div>
+                <h3>Minh Trần</h3>
+                <p>Frontend Developer</p>
+                <span class="flip-hint">Hover / Focus ↻</span>
+              </div>
+              <div class="flip-back">
+                <span class="member-index">02 / CONTACT</span>
+                <h3>Code<br>that flows.</h3>
+                <p>HTML · CSS · JavaScript · Performance</p>
+                <a href="mailto:dev@nova.example">dev@nova.example</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card" tabindex="0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="member-index">03</span>
+                <div class="avatar avatar-three">LY</div>
+                <h3>Ly Phạm</h3>
+                <p>Motion Designer</p>
+                <span class="flip-hint">Hover / Focus ↻</span>
+              </div>
+              <div class="flip-back">
+                <span class="member-index">03 / CONTACT</span>
+                <h3>Motion<br>with meaning.</h3>
+                <p>Motion · Interaction · Visual storytelling</p>
+                <a href="mailto:motion@nova.example">motion@nova.example</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="process">
+      <div class="container process-layout">
+        <div data-aos="fade-right">
+          <p class="eyebrow">04 / Workflow</p>
+          <h2>From prompt<br>to polish.</h2>
+          <p class="process-intro">
+            Vibe Coding không thay thế tư duy thiết kế. Con người phân rã bài toán,
+            ra lệnh, review và refactor; AI hỗ trợ thực thi.
+          </p>
+          <a class="btn btn-primary" href="#contact">Bắt đầu dự án <span>↗</span></a>
+        </div>
+
+        <ol class="process-list">
+          <li data-aos="fade-left">
+            <span>01</span><div><h3>Decompose</h3><p>Chia UI thành Header, Hero, Cards, Sections và Footer.</p></div>
+          </li>
+          <li data-aos="fade-left" data-aos-delay="100">
+            <span>02</span><div><h3>Prompt</h3><p>Mô tả rõ layout, breakpoint, animation và tiêu chí kỹ thuật.</p></div>
+          </li>
+          <li data-aos="fade-left" data-aos-delay="200">
+            <span>03</span><div><h3>Review</h3><p>Kiểm tra DOM, CSS Grid/Flex, responsive và hiệu năng chuyển động.</p></div>
+          </li>
+          <li data-aos="fade-left" data-aos-delay="300">
+            <span>04</span><div><h3>Refactor</h3><p>Loại bỏ code thừa, dùng biến CSS và transform/opacity cho motion.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section cta-section" id="contact">
+      <div class="container cta-box" data-aos="zoom-in">
+        <p class="eyebrow">05 / Let's make it move</p>
+        <h2>Have an idea?<br><em>Make it interactive.</em></h2>
+        <button class="btn btn-primary btn-large" id="contactBtn" type="button">
+          Gửi tín hiệu <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a class="brand" href="#home"><span class="brand-mark">N</span><span>nova<span class="brand-dot">.</span></span></a>
+      <p>Interactive Showcase · Web Design Week 5</p>
+      <p>© 2026 Nova Creative</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span>✓</span> Tín hiệu đã được ghi nhận.
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
